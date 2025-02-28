@@ -16,3 +16,79 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.gallery {
+  display: flex;
+flex-wrap: wrap;
+list-style: none;
+justify-content: center;
+align-items: center;
+background: rgb(255, 255, 255);
+gap: 24px;
+margin: 0 132px;
+}
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+}
+
+button {
+  cursor: pointer;
+  border-radius: 8px;
+background: rgb(78, 117, 255);
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10;
+padding: 8px 16px 8px 16px;
+margin: 16px 0px;
+}
+
+button:hover {
+  background: rgb(108, 140, 255);
+}
+
+form {
+  display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 16;
+padding: 24px;
+}
+input {
+  box-sizing: border-box;
+border: 1px solid rgb(128, 128, 128);
+border-radius: 4px;
+margin: 8px 0px;
+width: 360px;
+height: 40px;
+display: block;
+}
+input:hover {
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;  
+}
+
+input:active {
+  box-sizing: border-box;
+border: 1px solid rgb(128, 128, 128);
+border-radius: 4px;
+}
+textarea {
+  display: block;
+  box-sizing: border-box;
+border: 1px solid rgb(128, 128, 128);
+border-radius: 4px;
+margin: 8px 0px;
+width: 360px;
+height: 100%;
+}
